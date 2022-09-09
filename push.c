@@ -22,7 +22,7 @@ void m_push(stack_t **top, unsigned int number)
 
 	if (op_toks[1] == NULL)
 	{
-		set_op_tok_error(no_int_error(line_number));
+		set_op_tok_error(no_int_error(number));
 		return;
 	}
 
@@ -32,7 +32,7 @@ void m_push(stack_t **top, unsigned int number)
 			continue;
 		if (op_toks[1][i] < '0' || op_toks[1][i] > '9')
 		{
-			set_op_tok_error(no_int_error(line_number));
+			set_op_tok_error(no_int_error(number));
 			return;
 		}
 	}
