@@ -53,6 +53,7 @@ void set_op_tok_error(int error_code);
 
 /* OPCODE FUNCTIONS */
 void m_push(stack_t **top, unsigned int number);
+void m_pall(stack_t **top, unsigned int number);
 
 /* CUSTOM STANDARD LIBRARY FUNCTIONS */
 char **strtow(char *str, char *delims);
